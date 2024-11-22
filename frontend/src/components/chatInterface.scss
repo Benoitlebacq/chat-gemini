@@ -48,10 +48,19 @@
         }
     }
     &__button {
-        border: 1px solid lightgray;
+        border: 1px solid #3f50b5;
         border-left: none;
         cursor: pointer;
         padding-left: 15px;
+        background-color: #3f50b5;
+        color : white;
+        border-radius:  0 5px  5px 0;
+        &:disabled {
+            background-color: rgb(153, 153, 153);
+            border: 1px solid rgb(153, 153, 153);
+            color: white;
+            cursor: not-allowed;
+        }
     }
    }
 }

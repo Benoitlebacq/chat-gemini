@@ -14,7 +14,6 @@ export class GeminiService {
     }
 
     async getGemini(message: string, history: Content[]) {
-        console.log('GeminiService triggered', message);
 
         try {
             const model = this.genAi.getGenerativeModel({ model: 'gemini-pro' })
